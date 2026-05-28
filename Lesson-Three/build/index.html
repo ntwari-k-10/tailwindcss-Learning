@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-nunito">
+    <!--intro section -->
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 ">
+        <!--navbar-->
+        <nav class="fixed top-0 bg-white w-full ">
+            <div class="container mx-auto py-5 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="../img/logo.png" alt="" class="w-8">
+                <span class="text-2xl font-bold text-indigo-900">Portwind.</span>
+            </div>
+           <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+            <li class="hover:text-gray-500">
+                <a>homepage</a>
+            </li>
+            <li class="hover:text-gray-500">
+                <a>about me</a>
+            </li>
+            <li class="hover:text-gray-500">
+                <a>services</a>
+            </li>
+            <li class="hover:text-gray-500">
+                <a>works</a>
+            </li>
+            <li class="hover:text-gray-500">
+                <a>contact</a>
+            </li>
+           </ul>
+            <img src="../img/moon.png" alt="" class="hidden md:block w-5 cursor-pointer">
+            <div id="hamburger" class="space-y-1 md:hidden cursor-pointer p-3 z-20">
+                <div class="w-6 h-0.5 bg-black newClass"></div>
+                <div class="w-6 h-0.5 bg-black newClass"></div>
+                <div class="w-6 h-0.5 bg-black newClass"></div>
+            </div>
+            <ul id="menu" class="hidden absolute left-0 top-0 w-full p-10 space-y-10 rounded-b-3xl text-white text-center bg-indigo-900">
+                <li >
+                <a>homepage</a>
+            </li>
+            <li >
+                <a>about me</a>
+            </li>
+            <li >
+                <a>services</a>
+            </li>
+            <li >
+                <a>works</a>
+            </li>
+            <li>
+                <a>contact</a>
+            </li> 
+            </ul>
+            </div>
+        </nav>
+        <!-- intro centent-->
+         <div></div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>  
