@@ -9,9 +9,9 @@
 </head>
 <body class="font-nunito">
     <!--intro section -->
-    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 ">
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden">
         <!--navbar-->
-        <nav class="fixed top-0 bg-white w-full ">
+        <nav class="fixed top-0 bg-white w-full  z-20">
             <div class="container mx-auto py-5 flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <img src="../img/logo.png" alt="" class="w-8">
@@ -60,8 +60,71 @@
             </div>
         </nav>
         <!-- intro centent-->
-         <div></div>
+        <img src="../img/man.png" alt="" class="absolute bottom-0 right-0 h-5/6  object-center lg:left-0 mx-auto ">
+        <div class="hidden absolute lg:block -bottom-1/4 size-220  bg-indigo-900 rounded-full right-0 left-0 mx-auto -z-10 "></div>
+        <div class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold ">
+            <span class="text-gray-600">Frelance</span>
+            <p id="text" class="text-red-500">Developer</p>
+        </div> 
+        <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3">
+            <h1 class="text-4xl font-bold text-indigo-900" > Hi, I'm John</h1>
+            <p class="to-gray-400">
+             with over 10 years of experience on web design and development. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. N oumquam quo
+          provident, facere minus temporibus veniam nostrum reprehenderit nihil?
+            </p>
+            <a class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" href="#contact">Hire Me</a>
+        </div>
+    </div>
+    
+    <div class="px-10">
+        <div class="container mx-auto flex flex-col-reverse items-center lg:flex-row py-40 gap-20">
+            <div class="relative">
+                <img src="../img/dots.png" alt="" class="absolute h-1/4 top-0 left-0 -z-10">
+                <div class="h-full rounded-full overflow-hidden">
+                    <img src="../img/portrait.png" alt="">
+                </div>
+            </div>
+            <div class="my-auto flex flex-col gap-3">
+                <hi class="text-indigo-600 font-bold ">ABOUT ME</hi>
+                <hi class="text-3xl font-medium" >Better Design</hi>
+                <hi class="text-3xl font-medium" >Better Experience</hi>
+                <p class="text-gray-400">
+            I design and build digital products. I'm also a multi-disciplinary
+            maker with over 10 years of experiences in wide range of design
+            disciplines.
+          </p>
+          <h2 class="text-gray-400 font-medium">HTML</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+           <h2 class="text-gray-400 font-medium">Javascript</h2>
+          <div class="w-4/6 bg-gray-200 h-1.5 rounded-md">
+            <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+           <h2 class="text-gray-400 font-medium">React</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+            </div>
+        </div>
+    </div>
+      <!-- sevices -->
+    <div>
+          <div class="container mx-auto">
+            <!-- top -->
+             <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold ">SERVICES</h1>
+              <h1 class="text-3xl">What do I offer</h1>
+              <p class="w-1/2 text-center text-gray-400">My approach to website design is to create a website that
+            strengthens your company’s brand while ensuring ease of use and
+            simplicity for your audience.</p>
+             </div>
+             
+             <!-- bottom -->
+          </div>
     </div>
     <script src="./app.js"></script>
+    <script src="../autotyping.js"></script>
 </body>
 </html>  
