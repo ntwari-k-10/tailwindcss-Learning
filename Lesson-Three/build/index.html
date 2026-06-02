@@ -7,31 +7,31 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="font-nunito">
+<body class="font-nunito ">
     <!--intro section -->
-    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden">
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden dark:from-slate-800 dark:to-slate-900">
         <!--navbar-->
-        <nav class="fixed top-0 bg-white w-full  z-20">
+        <nav class="fixed top-0 bg-white w-full  z-20 dark:bg-slate-900">
             <div class="container mx-auto py-5 flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <img src="../img/logo.png" alt="" class="w-8">
-                <span class="text-2xl font-bold text-indigo-900">Portwind.</span>
+                <span class="text-2xl font-bold text-indigo-900 dark:text-white">Portwind.</span>
             </div>
-           <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+           <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase dark:text-gray-100">
             <li class="hover:text-gray-500">
-                <a>homepage</a>
+                <a >homepage</a>
             </li>
             <li class="hover:text-gray-500">
-                <a>about me</a>
+                <a  href="#about">about me</a>
             </li>
             <li class="hover:text-gray-500">
-                <a>services</a>
+                <a  href="#services">services</a>
             </li>
             <li class="hover:text-gray-500">
-                <a>works</a>
+                <a  href="#works">works</a>
             </li>
             <li class="hover:text-gray-500">
-                <a>contact</a>
+                <a  href="#contact">contact</a>
             </li>
            </ul>
             <img src="../img/moon.png" alt="" class="hidden md:block w-5 cursor-pointer">
@@ -42,19 +42,19 @@
             </div>
             <ul id="menu" class="hidden absolute left-0 top-0 w-full p-10 space-y-10 rounded-b-3xl text-white text-center bg-indigo-900">
                 <li >
-                <a>homepage</a>
+                <a class="hLink">homepage</a>
             </li>
             <li >
-                <a>about me</a>
+                <a class="hLink" href="#about">about me</a>
             </li>
             <li >
-                <a>services</a>
+                <a class="hLink" href="#services">services</a>
             </li>
             <li >
-                <a>works</a>
+                <a class="hLink" href="#works">works</a>
             </li>
             <li>
-                <a>contact</a>
+                <a class="hLink" href="#contact">contact</a>
             </li> 
             </ul>
             </div>
@@ -64,11 +64,11 @@
         <div class="hidden absolute lg:block -bottom-1/4 size-220  bg-indigo-900 rounded-full right-0 left-0 mx-auto -z-10 "></div>
         <div class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold ">
             <span class="text-gray-600">Frelance</span>
-            <p id="text" class="text-red-500">Developer</p>
+            <p id="text" class="text-red-500"></p>
         </div> 
-        <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3">
+        <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white p-6 h-fit w-1/3 dark:bg-slate-900 dark:shadow-slate-800 ">
             <h1 class="text-4xl font-bold text-indigo-900" > Hi, I'm John</h1>
-            <p class="to-gray-400">
+            <p class="text-gray-400">
              with over 10 years of experience on web design and development. Lorem
           ipsum dolor sit amet consectetur adipisicing elit. N oumquam quo
           provident, facere minus temporibus veniam nostrum reprehenderit nihil?
@@ -76,8 +76,8 @@
             <a class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" href="#contact">Hire Me</a>
         </div>
     </div>
-    
-    <div class="px-10">
+    <!-- about -->
+    <div id="about" class="px-10 dark:bg-slate-900">
         <div class="container mx-auto flex flex-col-reverse items-center lg:flex-row py-40 gap-20">
             <div class="relative">
                 <img src="../img/dots.png" alt="" class="absolute h-1/4 top-0 left-0 -z-10">
@@ -87,8 +87,8 @@
             </div>
             <div class="my-auto flex flex-col gap-3">
                 <hi class="text-indigo-600 font-bold ">ABOUT ME</hi>
-                <hi class="text-3xl font-medium" >Better Design</hi>
-                <hi class="text-3xl font-medium" >Better Experience</hi>
+                <hi class="text-3xl font-medium dark:text-white" >Better Design</hi>
+                <hi class="text-3xl font-medium dark:text-white" >Better Experience</hi>
                 <p class="text-gray-400">
             I design and build digital products. I'm also a multi-disciplinary
             maker with over 10 years of experiences in wide range of design
@@ -99,8 +99,8 @@
             <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
           </div>
            <h2 class="text-gray-400 font-medium">Javascript</h2>
-          <div class="w-4/6 bg-gray-200 h-1.5 rounded-md">
-            <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
           </div>
            <h2 class="text-gray-400 font-medium">React</h2>
           <div class="w-full bg-gray-200 h-1.5 rounded-md">
@@ -110,20 +110,155 @@
         </div>
     </div>
       <!-- sevices -->
-    <div>
+    <div id="services" class="dark:bg-slate-900">
           <div class="container mx-auto">
             <!-- top -->
              <div class="flex flex-col gap-3 items-center">
                 <h1 class="text-indigo-600 font-bold ">SERVICES</h1>
               <h1 class="text-3xl">What do I offer</h1>
-              <p class="w-1/2 text-center text-gray-400">My approach to website design is to create a website that
+              <p class="w-1/2 text-center text-gray-400  dark:text-white">My approach to website design is to create a website that
             strengthens your company’s brand while ensuring ease of use and
             simplicity for your audience.</p>
              </div>
              
              <!-- bottom -->
+              <div class="flex flex-wrap p-5 sm:p-0 ">
+                <!-- card -->
+                 <div class="w-full md:w-4/12 shadow-xl rounded-lg flex flex-col p-5 gap-3 my-3 md:my-10">
+                    <img class="w-10" src="../img/icon.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white" >UX / UI Design</h1>
+                    <p class="text-gray-400" >I specialize in creating interactive websites for individuals and
+              small businesses.</p>
+              <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                 </div>
+                 <!-- card -->
+                 <div class="w-full md:w-4/12 shadow-xl rounded-lg flex flex-col p-5 gap-3 my-3 md:my-10">
+                    <img class="w-10" src="../img/icon.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white" >UX / UI Design</h1>
+                    <p class="text-gray-400" >I specialize in creating interactive websites for individuals and
+              small businesses.</p>
+              <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                 </div>
+                 <!-- card -->
+                 <div class="w-full md:w-4/12 shadow-xl rounded-lg flex flex-col p-5 gap-3 my-3 md:my-10">
+                    <img class="w-10" src="../img/icon.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white" >UX / UI Design</h1>
+                    <p class="text-gray-400" >I specialize in creating interactive websites for individuals and
+              small businesses.</p>
+              <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                 </div>
+                 <!-- card -->
+                 <div class="w-full md:w-4/12 shadow-xl rounded-lg flex flex-col p-5 gap-3 my-3 md:my-10">
+                    <img class="w-10" src="../img/icon.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white" >UX / UI Design</h1>
+                    <p class="text-gray-400" >I specialize in creating interactive websites for individuals and
+              small businesses.</p>
+              <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                 </div>
+                 <!-- card -->
+                 <div class="w-full md:w-4/12 shadow-xl rounded-lg flex flex-col p-5 gap-3 my-3 md:my-10">
+                    <img class="w-10" src="../img/icon.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white" >UX / UI Design</h1>
+                    <p class="text-gray-400" >I specialize in creating interactive websites for individuals and
+              small businesses.</p>
+              <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                 </div>
+                 <!-- card -->
+                 <div class="w-full md:w-4/12 shadow-xl rounded-lg flex flex-col p-5 gap-3 my-3 md:my-10">
+                    <img class="w-10" src="../img/icon.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white" >UX / UI Design</h1>
+                    <p class="text-gray-400" >I specialize in creating interactive websites for individuals and
+              small businesses.</p>
+              <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                 </div>
+              </div>
           </div>
     </div>
+      <!-- works -->
+    <div id="works" class="py-40 dark:bg-slate-900">
+          <div class="container mx-auto">
+            <!-- top -->
+             <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold ">PORTFOLIO</h1>
+              <h1 class="text-3xl dark:text-white">Works & projects</h1>
+              <p class="w-1/2 text-center text-gray-400 ">I help designers, small agencies and businesses bring their ideas to
+            life. Powered by Figma, VS Code and coffee, I turn your requirements
+            into a well-designed websites.</p>
+             </div>
+             
+             <!-- bottom -->
+              <div class="flex flex-wrap p-5 sm:p-0 justify-between">
+                <!-- card -->
+                 <div class="w-full md:w-5/12 shadow-xl rounded-lg m-1 lg:w-1/5  my-3 md:my-10">
+                    <img src="../img/item.png" alt="">
+                 </div>
+                 <!-- card -->
+                 <div class="w-full md:w-5/12 shadow-xl rounded-lg m-1 lg:w-1/5  my-3 md:my-10">
+                    <img src="../img/item.png" alt="">
+                 </div>
+                 <!-- card -->
+                 <div class="w-full md:w-5/12 shadow-xl rounded-lg m-1 lg:w-1/5  my-3 md:my-10">
+                 <img src="../img/item.png" alt="">
+                 </div>
+                 <!-- card -->
+                 <div class="w-full md:w-5/12 shadow-xl rounded-lg m-1 lg:w-1/5  my-3 md:my-10">
+                    <img src="../img/item.png" alt="">
+                 </div>
+                 <!-- card -->
+                 <div class="w-full md:w-5/12 shadow-xl rounded-lg m-1 lg:w-1/5  my-3 md:my-10">
+                    <img src="../img/item.png" alt="">
+                 </div>
+                 <!-- card -->
+                 <div class="w-full md:w-5/12 shadow-xl rounded-lg m-1 lg:w-1/5  my-3 md:my-10">
+                   <img src="../img/item.png" alt="">
+                 </div>
+                  <!-- card -->
+                 <div class="w-full md:w-5/12 shadow-xl rounded-lg m-1 lg:w-1/5  my-3 md:my-10">
+                   <img src="../img/item.png" alt="">
+                 </div>
+                  <!-- card -->
+                 <div class="w-full md:w-5/12 shadow-xl rounded-lg m-1 lg:w-1/5  my-3 md:my-10">
+                   <img src="../img/item.png" alt="">
+                 </div>
+              </div>
+          </div>
+    </div>
+    <!-- contact -->
+     <div id="contact" class="dark:bg-slate-900">
+        <div class="container mx-auto ">
+            <!-- top -->
+             <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold ">CONTACT</h1>
+              <h1 class="text-3xl dark:text-white">Have  Question?</h1>
+              <p class="w-1/2 text-center text-gray-400 ">Do you have an idea? Let's discuss it and see what we can do
+            together.</p>
+             </div>
+
+             <!-- bottom -->
+              <form class="flex flex-col gap-5 items-center mt-5 p-8">
+                <input class="p-2 w-full ring-1 ring-indigo-200 rounded-sm md:w-1/2 dark:bg-slate-800 dark:ring-0 dark:text-white" type="text" placeholder="Name Surname">
+                <input class="p-2 w-full ring-1 ring-indigo-200 rounded-sm md:w-1/2 dark:bg-slate-800 dark:ring-0 dark:text-white" type="email" placeholder="Email">
+                <textarea class="p-2 w-full ring-1 ring-indigo-200 rounded-sm md:w-1/2 dark:bg-slate-800 dark:ring-0 dark:text-white" cols="30" rows="10" placeholder="Message..."></textarea>
+                <button class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md course-pointer" >Submit</button>
+              </form>
+        </div>
+     </div>
+     <!-- footer -->
+      <div class=" bg-gray-800 w-full">
+            <div class="container mx-auto py-5 flex justify-between items-center">
+            <div class="flex items-center gap-2 ">
+                <img src="../img/logo.png" alt="" class="w-8">
+                <span class="text-2xl font-bold text-white">Portwind.</span>
+            </div>
+             <span class="hidden md:block font-medium text-white">© 2022 Portwind. Design with ♥️ by Lama Dev.</span>
+            <div class="flex gap-2"> 
+                <img class="w-4 cursor-pointer" src="../img/facebook.png" alt="">
+                <img class="w-4 cursor-pointer" src="../img/instagram.png" alt="">
+                <img class="w-4 cursor-pointer" src="../img/twitter.png" alt="">
+                <img class="w-4 cursor-pointer" src="../img/linkedin.png" alt="">
+            </div>
+            </div>
+        </div>
     <script src="./app.js"></script>
     <script src="../autotyping.js"></script>
 </body>
