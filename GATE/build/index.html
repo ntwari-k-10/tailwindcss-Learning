@@ -9,12 +9,12 @@
 <body>
     <!-- navigation bar -->
     <div>
-        <header class="flex justify-around sm:justify-around h-18 mt-2 sticky top-0">
+        <header class="flex justify-around sm:justify-around h-18 mt-2 sticky top-0 bg-white z-100">
             <div class="w-2xl h-2xl basis-64">
                 <img src="" alt="">
             <img class="overl" src="https://cms-cdn.lmu.de/assets/img/Logo_LMU.svg" alt="">
             </div>
-            <div class="flex items-center basis-xl">
+            <div class="flex items-center basis-xl place-content-start">
                 <ul class="font-bold flex items-center justify-between gap-7">
                 <li class="p-2 hover:text-green-500 cursor-pointer" href="">Research</li>
                 <li class="p-2 mx-2 hover:text-green-500 cursor-pointer"href="">Study</li>
@@ -31,9 +31,20 @@
             </div>
         </header>
         <!-- starting section -->
-         <div>
-            <img class="lg:size-5/6 mx-auto md:size-full" src="https://cms-cdn.lmu.de/media/newsroom-content-hub/fui_magazin_rhythmus_titel_gettyimages_riesenrad_2_1_format_l.jpg" alt="">
-         </div>
+         <div class="size-5/6 mx-auto absolute">
+            <div class="">
+            <img class="inline-screen" src="https://cms-cdn.lmu.de/media/newsroom-content-hub/fui_magazin_rhythmus_titel_gettyimages_riesenrad_2_1_format_l.jpg" alt="">
+            </div>
+             <div class="w-160 h-160 bg-white z-10 relative float-right -top-80  border hover:border-green-500 col-start-3 col-span-2">
+            <a class="hover:text-green-500 cursor-pointer ">
+                <div class="size-full p-10 float-right mx-auto">
+                    <h1 class="font-bold text-5xl  py-4">The rhythm of life</h1>
+                    <p class="text-xl space-x-2 font-sans font-extralight">How regular repetition structures humans,society,and natural processes. The new issue of our digital magazine "LMU Reasearch and Innovation" is online!</p>
+                </div>
+        </div>
+           <!-- bellow first photo -->
+         
+        </header>
     </div>
 </body>
 </html>
